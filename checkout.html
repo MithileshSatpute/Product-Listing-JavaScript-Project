@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+    <div>
+       <!--reponsive Menu -->
+    <nav class="navbar">
+        <div class="logo">VENIA</div>
+        <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product-list.html">Women</a></li>
+            <li><a href="product-list.html">Men</a></li>
+            <li><a href="product-list.html">Jewellery</a></li>
+            <li><a href="product-list.html">Electronics</a></li>
+        </ul>
+        <div class="cart">
+            <i class="cart-icon">🛒</i>
+            <span class="cart-badge" id="cart-items"></span>
+        </div>
+    </nav>
+    <script src="menu.js"></script>
+    <!--reponsive Menu End-->
+        <h2 class="hed-sty">Checkout</h2>
+        <div class="cards-container">
+
+            <div class="container">
+                <form id="checkoutForm">
+                    <div class="row">
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="abc@xyz.com">
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(222) 222-2222">
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-header" data-panel="shipping-info">
+                            <h3>1. Shipping Information</h3>
+                            <div class="accordion-content" id="shipping-info">
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label for="country">Country</label>
+                                        <select id="country" name="country"></select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label for="firstName">First
+                                            Name</label>
+                                        <input type="text" id="firstName" name="firstName">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="lastName">Last
+                                            Name</label>
+                                        <input type="text" id="lastName" name="lastName">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label for="streetAddress">Street
+                                            Address</label>
+                                        <input type="text" id="streetAddress" name="streetAddress">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="streetAddress2">Street
+                                            Address 2 <span class="optional">(Optional)</span></label>
+                                        <input type="text" id="streetAddress2" name="streetAddress2">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-group">
+                                        <label for="city">City</label>
+                                        <input type="text" id="city" name="city">
+                                    </div>
+                                    <div class="nested-layout">
+                                        <div class="input-group">
+                                            <label for="state">State</label>
+                                            <select id="state" name="state"></select>
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="zip">ZIP</label>
+                                            <input type="text" id="zip" name="zip">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn-center">
+                                    <!-- <a href="order-confirmation.html">
+                                </a> -->
+                                    <button class="btn-submit" id="continue" type="submit">CONTINUE TO SHIPPING
+                                        METHOD</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 nd -->
+                  
+                    <!-- Shipping Method Section -->
+                    <div class="section">
+                        <div class="accordion">
+                            <div class="accordion-header" data-panel="shipping-method">
+                                <h3>2. Shipping Method</h3>
+                                <div class="accordion-content" id="shipping-method">
+                                    <div class="shipping-method">
+                                        <label class="shipping-option">
+                                            <input class="radio-input" type="radio" name="shipping" value="standard"
+                                                checked>
+                                            <p class="radio-label">Shipping
+                                                <span> (4-8 business days
+                                                    via
+                                                    USPS) FREE</span>
+                                            </p>
+                                        </label>
+                                        <label>
+                                            <input class="radio-input" type="radio" name="shipping" value="express">
+                                            <p class="radio-label"> Express
+                                                Delivery <span> (2-5
+                                                    business
+                                                    days via USPS)
+                                                    $17.95</span></p>
+                                        </label>
+                                        <label>
+                                            <input class="radio-input" type="radio" name="shipping" value="next-day">
+                                            <p class="radio-label">Next Day
+                                                Delivery <span> (Next
+                                                    business
+                                                    day via FedEx)
+                                                    $53.61</span></p>
+                                        </label>
+                                    </div>
+                                    <div class="btn-center">
+                                        <button class="btn-submit" id="continue2" type="submit">CONTINUE TO
+                                            PAYMENT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3rd Payment Information-->
+                    <div class="accordion-container">
+                        <div class="accordion">
+                            <div class="accordion-header" data-panel="payment-info">
+                                <h3>3. Payment Information</h3>
+                                <div class="accordion-content" id="payment-info">
+                                    <div class="shipping-method">
+                                        <label class="shipping-option">
+                                            <input class="radio-input" type="radio" name="creditcard"
+                                                value="creditcard1" checked>
+                                            <p class="radio-label">Credit
+                                                Card</p>
+                                        </label>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-group">
+                                            <label for="email">Name on
+                                                Card</label>
+                                            <input type="text" id="nameoncard" name="nameoncard" placeholder required />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-group">
+                                            <label for="country">Credit Card
+                                                Number</label>
+                                            <input type="text" id="creditCard" name="creditCard" required />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="nested-layout">
+                                            <div class="input-group">
+                                                <label for="state">Expiration
+                                                    Date</label>
+                                                <input type="text" id="Expiration" name="Expiration" required />
+                                            </div>
+                                            <div class="input-group">
+                                                <label for="zip">CVV</label>
+                                                <input type="text" id="cvv" name="cvv" required />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="shipping-method">
+                                        <label class="shipping-option">
+                                            <input class="radio-input" type="radio" name="creditcard" value="paypal" />
+                                            <p class="radio-label">PayPal</p>
+                                        </label>
+                                    </div>
+                                    <div class="btn-center">
+                                        <button class="btn-submit" id="continue3" type="submit">CONTINUE TO REVIEW
+                                            ORDER</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div style="display: table; margin-bottom: 20px;">
+                <div class="card-1">
+                    <p class="card-description">Sign in for Express
+                        Checkout</p>
+                    <div class="card-button">Sign In</div>
+                </div>
+
+                <div class="pricing-summary">
+                    <h3>Pricing Summary</h3>
+                    <div id="pricing-details">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer Section -->
+        <footer id="footer">
+            <div class="footer-line"></div>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Account</h3>
+                    <ul>
+                        <li><a href="#login">Login</a></li>
+                        <li><a href="#register">Register</a></li>
+                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#settings">Settings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#about">Company Info</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#support">Support</a></li>
+                        <li><a href="#terms">Terms & Conditions</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <p style="font-size: 12px;">Stay connected with us:</p>
+                    <ul class="social-media">
+                        <li><a href="https://facebook.com" target="_blank" aria-label="Facebook"><img
+                                    src="images/facebook.png" alt="Facebook"></a></li>
+                        <li><a href="https://twitter.com" target="_blank" aria-label="Twitter"><img
+                                    src="images/twitter.png" alt="Twitter"></a></li>
+                        <li><a href="https://instagram.com" target="_blank" aria-label="Instagram"><img
+                                    src="images/insta.png" alt="Instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-line"></div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Venia. All Rights Reserved. | <a href="#terms">Terms of Use</a> | <a
+                        href="#privacy">Privacy
+                        Policy</a></p>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
+    </div>
+    
+    <script src="checkout.js"></script>
+</body>
+
+</html>

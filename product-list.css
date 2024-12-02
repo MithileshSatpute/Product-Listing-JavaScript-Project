@@ -1,0 +1,415 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.container {
+  padding: 0 10%;
+}
+.navbar {
+  background-color: #0055ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: white;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f0f0f0;
+}
+
+.cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.outerwear-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a1a1a; 
+  color: white;
+  padding: 20px;
+}
+
+.outerwear-text {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.outerwear-text h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.underline {
+  width: 50px;
+  height: 4px;
+  background-color: #0055ff;
+  margin: 10px auto 0;
+}
+
+.outerwear-image {
+  flex: 1;
+}
+
+.outerwear-image img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  max-height: 400px; 
+}
+
+.load-more-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.load-more {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.load-more:hover {
+  background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+  .outerwear-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .outerwear-text, .outerwear-image {
+    flex: 1 1 100%;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid #fff;
+  background-color: #fff;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.results-sort {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.results-count {
+  font-size: 0.9rem;
+}
+
+.sort-dropdown {
+  padding: 5px;
+  font-size: 0.9rem;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.filters {
+  flex: 0 0 20%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.filters h2 {
+  margin-top: 0;
+}
+
+.filters ul {
+  list-style: none;
+  padding: 0;
+}
+
+.filters li {
+  margin-bottom: 10px;
+}
+
+.product-list {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: left;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  font-size: 12px;
+  margin: 10px 0;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.product-card .price {
+  font-size: 12px;
+  color: #555;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.product-card .favorite {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.product-card .favorite:hover {
+  color: #ff0000;
+}
+
+
+.search-bar {
+  width: 88%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.load-more {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0055ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.load-more:hover {
+  background-color: #003bb3;
+}
+
+.error {
+  color: red;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: calc(33% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.product-card:hover {
+    transform: scale(1.05);
+}
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.product-details {
+    padding: 15px;
+}
+.product-name {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.product-price {
+    color: #c40000;
+    margin-bottom: 10px;
+}
+.product-description {
+    font-size: 14px;
+    color: #555;
+}
+@media (max-width: 768px) {
+    .product-card {
+        width: calc(50% - 20px);
+    }
+}
+@media (max-width: 480px) {
+    .product-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .filters {
+    margin-bottom: 20px;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #0055ff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nav-links {
+    gap: 15px;
+    font-size: 0.9rem;
+  }
+
+  .cart-icon {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .nav-links {
+    gap: 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .nav-links {
+    gap: 25px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .nav-links {
+    gap: 30px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .nav-links {
+    gap: 35px;
+    font-size: 1.3rem;
+  }
+}
+

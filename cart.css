@@ -1,0 +1,219 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+  text-align: center;
+}
+
+.container-m {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  gap: 20px;
+}
+
+.cart-container {
+  width: 70%;
+  display: table;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Cart Styles */
+.cart-items {
+  flex: 2;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 20px;
+  align-items: center;
+}
+
+.product-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-details h4 {
+  font-size: 12px;
+}
+
+.quantity-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.quantity-btn {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.quantity-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.quantity-input {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 5px;
+  background-color: #f9f9f9;
+}
+
+.item-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.action-btn {
+  font-size: 11px;
+  background-color: transparent;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.action-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* Pricing Summary */
+.pricing-summary {
+  height: 100%;
+  width: 25%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-summary h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.pricing-row {
+  font-size: 12px;
+}
+
+#pricing-details {
+  display: grid;
+  margin-bottom: 20px;
+}
+
+#pricing-details div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+.checkout-btn:hover {
+  background-color: #0056b3;
+}
+
+.paypal-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  background-color: #ffcc00;
+  color: black;
+}
+
+.paypal-btn:hover {
+  background-color: #e5b700;
+}
+
+.buttonGroup {
+  display: table !important;
+  align-content: center;
+}
+
+/* Accordion Styles */
+.accordion-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.accordion {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.accordion-header {
+  padding: 15px;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #e2e2e2;
+}
+
+.accordion-content {
+  padding: 15px;
+  display: none;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  border-radius: 0 0 5px 5px;
+}
+
+.icon {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.accordion-header.active .icon {
+  transform: rotate(90deg);
+}
+
+.accordion-header.active + .accordion-content {
+  display: block;
+}
+
+.accordion-header h6 {
+  margin: 0;
+}

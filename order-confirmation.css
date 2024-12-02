@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    background-color: white;
+    padding: 0 10%;
+}
+
+.order-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #ffffff;
+}
+
+.section {
+    width: 30%;
+}
+
+p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #555;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item-card {
+    padding: 15px;
+    border-radius: 8px;
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+    display: flex;
+        justify-content: left;
+        gap: 10px;
+  
+}
+
+.item-card img {
+    max-width: 15%;
+}
+
+.item-details {
+    margin-top: 10px;
+}
+
+.item-details p {
+    margin: 5px 0;
+}
+
+#support-info {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    background-color: #5db4e7;
+    padding: 10px;
+    max-width: 80vh;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3, .card h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.social-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    gap:10px
+}
+
+.social-links li {
+    margin-bottom: 10px;
+}
+.social-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
